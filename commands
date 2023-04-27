@@ -1,0 +1,4 @@
+#!/bin/bash
+rm TestOpenCV.class
+javac -cp /usr/share/java/opencv.jar TestOpenCV.java
+java -Djava.library.path=/usr/lib/jni/ -cp /usr/share/java/opencv.jar:. TestOpenCV
